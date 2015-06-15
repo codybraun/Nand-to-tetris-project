@@ -1,0 +1,16 @@
+//main class, runs automatically
+class Main{
+
+	function void main() {
+		var TypingGame game;
+		let game = TypingGame.new();
+//start the opponent moving
+		do game.start();
+		do game.dispose();
+		return;
+
+}
+
+
+
+}

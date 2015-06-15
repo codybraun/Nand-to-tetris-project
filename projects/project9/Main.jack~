@@ -1,0 +1,15 @@
+//main class, runs automatically
+class Main{
+
+	function void main() {
+		var SpellingGame game;
+		let game = SpellingGame.new();
+		do game.run();
+		do game.dispose();
+		return;
+
+}
+
+
+
+}

@@ -1,0 +1,132 @@
+class Math {
+
+static Array twosArray;
+
+function void init (){
+let twosArray = Array.new(16);
+let twosArray[0] = 1;
+let twosArray[1] = 2;
+let twosArray[2] = 4;
+let twosArray[3] = 8;
+let twosArray[4] = 16;
+let twosArray[5] = 32;
+let twosArray[6] = 64;
+let twosArray[7] = 128;
+let twosArray[8] = 256;
+let twosArray[9] = 512;
+let twosArray[10] = 1024;
+let twosArray[11] = 2048;
+let twosArray[12] = 4096;
+let twosArray[13] = 8192;
+let twosArray[14] = 16384;
+let twosArray[15] = 16384 + 16384;
+return;
+}
+
+//check if bit y is 1 in int x
+function Boolean bit (int x, int y){
+if ((x & twosArray[y]) = 0){
+return false;
+}
+else
+{
+return true;
+}
+
+}
+
+function int multiply(int x, int y){
+	var int i, sum, shiftedX;
+	let shiftedX = x;
+	let sum = 0;
+	let i = 0;
+	//mult algorithm from the text
+	while (i<16){
+		if (Math.bit(y,i)){
+			let sum = sum + shiftedX;
+		}
+		let i = i +1;
+		let shiftedX = shiftedX + shiftedX;
+	}
+	return sum;
+}
+
+function int abs(int input){
+	//check if negative and return 
+	
+	if (input > (-1)) {
+		return input;
+	}
+	else
+	{
+		return -(input);
+	}
+}
+
+function int divide(int x, int y){
+	var int q, total;
+	var boolean xSign, ySign;
+	let xSign = (x<0);
+	let ySign = (y<0);
+	let x = Math.abs(x);
+	let y = Math.abs(y);
+	let q = 0;
+	let total = 0;
+	
+	if (y>x) {
+		return 0;
+	}
+	//algorithm from the book
+	let q = Math.divide(x, (y+y));
+	if ((x - (2*q*y))<y) {
+		let total = q + q;
+	}
+	else {
+		let total = q + q + 1;
+	}
+	
+	if (xSign = ySign) //same sign, just send it back as is
+	{
+	return total;
+	}
+	else 
+	//one negative, negate total
+	{
+	return -total;
+	}
+}
+
+function int min(int x, int y){
+	if (x>y){
+		return y;
+	}
+	else{
+		return x;
+	}
+
+}
+
+function int max(int x, int y){
+	//find the bigger one and return it
+	if (x<y){
+		return y;
+	}
+	else{
+		return x;
+	}
+}
+
+function int sqrt(int x){
+	var int i, y;
+	let i =0;
+	let y=0;
+	//algorithm from the book
+	while (i<7){
+		if (~(y+twosArray[i]) * (y+twosArray[i]) > x){
+			let y = y+twosArray[i];
+		}
+	}
+		return y;
+	}
+
+}

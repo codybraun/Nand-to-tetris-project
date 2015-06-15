@@ -1,0 +1,13 @@
+function Main.main 0 
+push argument 0 
+pop pointer 0 
+call TypingGame.new 0 
+pop temp 1
+pop local 0 
+call game.start 0 
+pop temp 1
+call game.cleanup 0 
+pop temp 1
+push constant 1 
+return 
+

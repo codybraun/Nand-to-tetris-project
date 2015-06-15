@@ -1,0 +1,162 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Screen.jack
+
+/**
+ * Graphic screen library.
+ */
+class Screen {
+	static array twosArray;
+	static boolean color; //true if black, false if white
+    /** Initializes the Screen. */
+    function void init() {
+    let twosArray = Array.new(16);
+	let twosArray[0] = 1;
+	let twosArray[1] = 2;
+	let twosArray[2] = 4;
+	let twosArray[3] = 8;
+	let twosArray[4] = 16;
+	let twosArray[5] = 32;
+	let twosArray[6] = 64;
+	let twosArray[7] = 128;
+	let twosArray[8] = 256;
+	let twosArray[9] = 512;
+	let twosArray[10] = 1024;
+	let twosArray[11] = 2048;
+	let twosArray[12] = 4096;
+	let twosArray[13] = 8192;
+	let twosArray[14] = 16384;
+	let twosArray[15] = 16384 + 16384;
+	let color = true;
+	return;
+    }
+
+    /** Erases the whole screen. */
+    function void clearScreen() {
+    	var int i;
+    	let i = 16384;
+    	//iterate through all memory addresses between screen and keyboard and set to zero
+   		while (i<24576){
+   		do Memory.poke (i, 0);
+   		let i = i + 1;
+   		}
+   		return;
+    }
+
+    /** Sets the color to be used in further draw commands
+     *  where white = false, black = true. */
+    function void setColor(boolean b) {
+    	let color = b;
+    	return;
+    }
+
+    /** Draws the (x, y) pixel. */
+    function void drawPixel(int x, int y) {
+    var int address, div, mod, value;
+    	if ((x<511) & (y < 255) & (x >-1) & (y > -1)){ //make sure all in range
+	    	let div = x/16;
+	    	let mod = x - (div*16);
+	    	let address = 16384 + (y * 32) + div;
+	    	let value = Memory.peek(address);
+	    	
+	    	if (color){//black
+	    		let value = value | twosArray[mod]; //bitwise or with the black pixel
+	    		}
+	    	else{
+	    		let value = (~twosArray[mod]) & value; //flip all bits to always zero out the pixel in value
+	    	}
+	   		do Memory.poke(address, value);
+   		}
+   		return;
+    }
+
+    /** Draws a line from (x1, y1) to (x2, y2). */
+    function void drawLine(int x1, int y1, int x2, int y2) {
+    var int x, y, dx, dy, adyMinusBdx, upper, lower, left, right, negative;
+    let x = 0;
+    let y = 0;
+    let negative = 1;
+    if (((y1-y2) < 0 & (x1-x2) > 0) | ((y1-y2) > 0 & (x1-x2) < 0)) { //negative slope?
+    let negative = -1;
+    }
+    let dx = Math.abs(x1-x2);
+    let dy = Math.abs(y1-y2);
+    let adyMinusBdx = 0;
+    
+    if (dx=0) { //vertical line
+	    if (y1>y2){
+		    let upper = y1;
+		    let lower = y2;
+	    }
+	    else
+	    {
+		    let upper = y2;
+		    let lower = y1;
+	    }
+	    
+	    while (~(lower > upper)){
+		    do Screen.drawPixel(x1, lower);
+		    let lower = lower + 1;
+	    }
+    return;
+    }
+    
+    if (dy=0) { //horizontal line
+	    if (x1<x2){
+		    let left = x1;
+		    let right = x2;
+	    }
+	    else
+	    {
+		    let left = x2;
+		    let right = x1;
+	    }
+	    
+	    while (~(left > right)){
+		    do Screen.drawPixel(left, y1);
+		    let left = left + 1;
+	    }
+    return;
+    }
+    
+    while (~(x>dx) & ~(y > dy)){
+    	do Screen.drawPixel(x1+x, y1+(negative * y));
+    	if (adyMinusBdx < 0){
+    		let x = x + 1;
+    		let adyMinusBdx = adyMinusBdx + dy;
+    	}
+    	else
+    	{
+    	    let y = y + 1;
+    	    let adyMinusBdx = adyMinusBdx - dx;
+    	}
+    }
+    return;
+    }
+
+    /** Draws a filled rectangle where the top left corner
+     *  is (x1, y1) and the bottom right corner is (x2, y2). */
+    function void drawRectangle(int x1, int y1, int x2, int y2) {
+    var int i;
+    let i = y1;
+    while (i<y2){
+	    do Screen.drawLine(x1, i, x2, i);
+	    let i = i +1;
+    }
+    return;
+    }
+
+    /** Draws a filled circle of radius r around (cx, cy). */
+    function void drawCircle(int cx, int cy, int r) {
+    var int i, dy, x;
+    let i = (cy - r);
+    while (i< (cy + r)){
+    	let i = i +1;
+    	let dy = Math.abs(cy-i);
+    	let x = Math.sqrt((r*r) - (dy * dy));
+	    do Screen.drawLine((cx - x),  i, (cx + x) , i);
+    }
+    return;
+    }
+}

@@ -1,0 +1,42 @@
+class TypeStrings {
+static String stringToType;
+field int pos;
+field char currentChar;
+
+constructor TypeStrings new(){
+let stringToType = "THEQUICKBROWNFOXBLAHBLAHBLAH";
+let pos = 0;
+let currentChar = stringToType.charAt(pos);
+return this;
+}
+
+method Boolean handleInput(){
+	var char keyPressed;
+	let keyPressed = Keyboard.keyPressed();
+	do Output.printChar(keyPressed);
+	if (keyPressed = currentChar)
+		{
+			do nextChar();
+			do Output.moveCursor(0,0);
+			do Output.printString("Correct!");
+			return true;
+		}
+	return false;
+}
+
+method void handleOutput(){
+	do Output.moveCursor(0,0);
+	do Output.printString("Type:  ");
+	do Output.printChar(currentChar);
+	return;
+}
+
+method void nextChar(){
+let pos = pos + 1;
+let currentChar = stringToType.charAt(pos);
+return;
+}
+
+
+
+}

@@ -1,0 +1,62 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Memory.jack
+
+/**
+ * Memory operations library.
+ */ 
+class Memory {
+	static Array freeList;
+	
+    /** Initializes memory parameters. */
+    function void init() {
+    let freeList = 2048;//point the freelist to this whole empty area initially
+    let freeList[0] = 16384 - 2048; //the length is all mem between the start of the heap and the i/o segments
+    let freeList[1] = null; //no next pointer initially
+    return;
+    }
+
+    /** Returns the value of the main memory at the given address. */
+    function int peek(int address) {
+    var Array memAddress;
+    let memAddress = address; //use address as a pointer and return the first item indexed there
+    return memAddress[0];
+    }
+
+    /** Sets the value of the main memory at this address
+     *  to the given value. */
+    function void poke(int address, int value) {
+    	var Array memAddress;
+        let memAddress = address; 
+    	let memAddress[0] = value; //same as peek, but set value at address[0]
+    	return;
+    }
+
+    /** finds and allocates from the heap a memory block of the 
+     *  specified size and returns a reference to its base address. */
+    function int alloc(int size) {
+    var Array blockToCheck;
+    var int free, next;
+    let blockToCheck = freeList;
+    let size = size + 2;
+    let free = blockToCheck[0];
+    let next = blockToCheck[1];
+    while (blockToCheck[0]<size){
+    	let blockToCheck = blockToCheck[1];
+    	let free = blockToCheck[0];
+    	let next = blockToCheck[1];
+    }
+    let freeList = freeList + size;
+    let freeList[0] = free - size;
+    let freeList[1] = next;
+    return blockToCheck;
+    }
+
+    /** De-allocates the given object and frees its space. */
+    function void deAlloc(int object) {
+    var int size;
+    let size = object[-1];
+    return;
+    }    
+}

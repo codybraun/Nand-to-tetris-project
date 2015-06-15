@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="19" version="2.0">
+<workbenchAdvisor/>
+<window height="714" width="1012" x="123" y="55">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="60" y="30"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="60" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1424019903506" focus="true" label="Workspace - Resource">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.python.pydev.editor.PythonEditor" name="project8.py" partName="project8" title="project8" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/project8.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/project8.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9486" selectionTopPixel="3919"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="NestedCall.asm" partName="NestedCall.asm" title="NestedCall.asm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.asm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.asm"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1996" selectionTopPixel="3681"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Sys.vm" partName="Sys.vm" title="Sys.vm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/Sys.vm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/Sys.vm"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="485" selectionTopPixel="213"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="NestedCall.cmp" partName="NestedCall.cmp" title="NestedCall.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/NestedCall.cmp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/NestedCall.cmp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="96" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="BasicLoop.asm" partName="BasicLoop.asm" title="BasicLoop.asm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.asm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.asm"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="StaticsTest.cmp" partName="StaticsTest.cmp" title="StaticsTest.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/StaticsTest.cmp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/StaticsTest.cmp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.ui.resourcePerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.team.cvs.ui.cvsPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2d0ad4" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.659375" ratioLeft="422" ratioRight="218" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="320" ratioRight="320" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/StaticsTest.cmp"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/project8.py"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.asm"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/Sys.vm"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/NestedCall.cmp"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.asm"/>
+</editors>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="319" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="4351" y="1"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="4351" y="1"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="5756" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="5848" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="939" y="8"/>
+</item>
+<item historyLabel="StaticsTest.cmp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NestedCall.cmp" index="4">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="1434" y="0"/>
+</item>
+<item historyLabel="NestedCall.cmp" index="4">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="243" y="0"/>
+</item>
+<item historyLabel="NestedCall.cmp" index="4">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="1941" y="0"/>
+</item>
+<item historyLabel="NestedCall.cmp" index="4">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="307" y="0"/>
+</item>
+<item historyLabel="NestedCall.cmp" index="4">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="439" y="0"/>
+</item>
+<item historyLabel="StaticsTest.cmp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="439" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="2819" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="439" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="2998" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="5848" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="2743" y="0"/>
+</item>
+<item historyLabel="Sys.vm" index="3">
+<position info="not_deleted" x="485" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="2743" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="5857" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="3163" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="5857" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="3163" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="5857" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="3163" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="4953" y="0"/>
+</item>
+<item historyLabel="NestedCall.asm" index="2">
+<position info="not_deleted" x="1996" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="4950" y="0"/>
+</item>
+<item historyLabel="NestedCall.cmp" index="4">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="9101" y="0"/>
+</item>
+<item historyLabel="BasicLoop.asm" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="project8" index="1">
+<position info="not_deleted" x="9486" y="0"/>
+</item>
+<item active="true" historyLabel="StaticsTest.cmp" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="StaticsTest.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/StaticsTest.cmp">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/StaticsTest.cmp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="BasicLoop.asm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.asm">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.asm"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="NestedCall.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/NestedCall.cmp">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/NestedCall.cmp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Sys.vm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/Sys.vm">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall/Sys.vm"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="NestedCall.asm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.asm">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.asm"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="SimpleFunction.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/SimpleFunction.cmp">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/SimpleFunction.cmp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="SimpleFunction.vm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/SimpleFunction.vm">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/SimpleFunction.vm"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="NestedCall.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.cmp">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/NestedCall.cmp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="BasicLoop.vm" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.vm">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.vm"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="BasicLoop.cmp" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.cmp">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/BasicLoop.cmp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="project8.py" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/project8.py">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project8/project8.py"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="project7.py" tooltip="/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project7/project7.py">
+<persistable uri="file:/home/jcbraun/Desktop/Systems/jcbraun-mpcs52011-win-15/projects/project7/project7.py"/>
+</file>
+</mruList>
+</workbench>

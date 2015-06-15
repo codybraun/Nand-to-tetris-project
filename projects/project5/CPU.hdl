@@ -1,0 +1,47 @@
+CHIP CPU {
+
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+                         // program (reset==1) or continue executing
+                         // the current program (reset==0).
+
+    OUT outM[16],        // M value output
+        writeM,          // Write to M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+
+    PARTS:
+    ARegister (in=regAIn, out=regAOut , load=regALoad); //register A
+    Or(out= regALoad, a=isAInstr, b=AIsDest); //load reg A if A instruction or C instruction with A as location
+	Not (in=instruction[15], out=isAInstr);
+	Mux16(a=instruction, b=ALUOut, out=regAIn, sel=AIsDest); //choose whether a gets bits of instruction if A instruction or output of ALU if A is the destination of a C command
+	And(a=instruction[15], b=instruction[5], out=AIsDest); //C command with A included in destination
+	Mux16(a=regAOut, b=inM, sel=instruction[12], out =AMOut); //choose between A or M as ALU input
+	ALU(out=outM, out=ALUOut, zr=zeroOut, ng=negOut, y=AMOut, x=regDOut,  zx=instruction[11], nx=instruction[10], zy=instruction[9], ny=instruction[8], f=instruction[7], no=instruction[6]);
+	And(a=instruction[15], b=instruction[4], out=regDLoad); //Load reg D?
+	DRegister (in=ALUOut, out=regDOut, load=regDLoad); //register D
+	PC(in=regAOut, out[0..14]=pc, load=PCLoad, inc=NotPCLoad , reset=reset); //will always increment if not loading I think
+	And(a=instruction[15],b=instruction[3],out=writeM); //write to M?
+	
+	And16(a=regAOut, b=true, out[0..14]=addressM);
+	
+	
+	//jumps
+	//greater than zero
+	Not(in=negOut, out=notNegOut);
+	Not(in=zeroOut, out=notZeroOut);
+	And(a=notNegOut , b=notZeroOut, out=greaterThanZero);
+	//all the greater than cases
+	And(a=greaterThanZero, b=instruction[0], out=greaterOut);
+	//all the equal cases
+	And(a=zeroOut, b=instruction[1], out=equalOut);
+	//all the less than cases
+	And(a=negOut, b=instruction[2], out=lessOut);
+	
+	Or(a=greaterOut,b=equalOut, out=greaterOrEqual);
+	Or(a=greaterOrEqual,b=lessOut, out=PCLoad1);
+	And(a=PCLoad1, b=instruction[15], out=PCLoad); //has to be a C command for any of this to happen
+	Not(in=PCLoad, out=NotPCLoad);
+	
+}

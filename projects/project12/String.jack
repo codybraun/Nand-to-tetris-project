@@ -1,0 +1,144 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/String.jack
+
+/**
+ * Represents a String object. Implements the String type.
+ */
+class String {
+	field Array string;
+	field int end, length;
+
+    /** Constructs a new empty String with a maximum length of maxLength. */
+    constructor String new(int maxLength) {
+    //create an array to put characters in
+    
+    if (~(maxLength=0)){
+    let string = Array.new(maxLength);
+    }
+    let length = maxLength; //initially the length of the string is just the maxlength
+    let end = 0; //and there are no characters before the end of the string
+    return this;
+    }
+
+    /** De-allocates the string and frees its space. */
+    method void dispose() {
+    if (~length=0){ //can't dealloc empty block
+   	do string.dispose(); //let the array dispose method handle the array
+   	}
+   	let length = 0;
+   	let end = 0;
+   	return;
+    }
+
+    /** Returns the current length of this String. */
+    method int length() {
+    //end tracks the ending
+    return end;
+    }
+
+    /** Returns the character at location j. */
+    method char charAt(int j) {
+    //make sure the character is before the end of the string and >=0
+    if ((j<end) & ~(j<0)){
+    return string[j];
+    }
+    return 0;
+    }
+
+    /** Sets the j'th character of this string to be c. */
+    method void setCharAt(int j, char c) {
+    //make sure the character is before the end of the string and >=0
+    if ((j>-1) & (j<end)){
+    let string[j] = c;
+    }
+    return;
+    }
+
+    /** Appends the character c to the end of this String.
+     *  Returns this string as the return value. */
+    method String appendChar(char c) {
+    if (end<length){ //make sure there's room to append the char in
+	    let string[end] = c;
+	    let end = end + 1;
+    }
+    else
+    {
+    do Sys.error(17);
+    }
+    return this;
+    }
+
+    /** Erases the last character from this String. */
+    method void eraseLastChar() {
+    //just move the end marker up one
+    let end = end - 1;
+    return;
+    }
+
+    /** Returns the integer value of this String until the first non
+     *  numeric character. */
+    method int intValue() {
+    var int i, num;
+    var boolean neg;
+    let neg = false;
+    let i = 0;
+    let num=0;
+    if (string[0]=45){
+	    let i = 1; //negative, advance one
+	    let neg = true;
+    }
+    while((i<end) & ((string[i])<58) & ((string[i])>47)){
+    	let num = (num*10) + (string[i]-48); //keep appending digits in the least significant position
+    	let i = i + 1;
+    }
+    if (neg) {
+    	return (num * -1);
+    }
+    else
+    {
+    return num;
+    }
+    }
+
+    /** Sets this String to hold a representation of the given number. */
+    method void setInt(int number) {
+    var boolean neg;
+    let end = 0;
+    if (number<0){
+	    do appendChar(45); //put a negative sign on and then get abs value of the number
+	    let number = Math.abs(number);
+    }
+    
+    do writeNum(number);
+    return;
+    }
+    
+    method void writeNum(int number){
+    	var int div, mod;
+    	let div = number/10;
+	    let mod = number - (div*10);
+	    let number = div;
+	    if (~(number=0)){
+	    do writeNum(number);
+	    }
+	    do appendChar(mod + 48);
+	    return;
+    }
+
+    /** Returns the new line character. */
+    function char newLine() {
+    return 128;
+    }
+
+    /** Returns the backspace character. */
+    function char backSpace() {
+    return 129;
+    }
+
+    /** Returns the double quote (") character. */
+    function char doubleQuote() {
+    return 34;
+    }
+}

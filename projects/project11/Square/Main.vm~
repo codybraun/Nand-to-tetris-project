@@ -1,0 +1,17 @@
+function Main.main 0 
+push argument 0 
+pop pointer 0 
+push pointer 0
+call SquareGame.new 1 
+pop local 0 
+push pointer 0
+push local 0 
+call SquareGame.run 1 
+pop temp 1
+push pointer 0
+push local 0 
+call SquareGame.dispose 1 
+pop temp 1
+push constant 1 
+return 
+

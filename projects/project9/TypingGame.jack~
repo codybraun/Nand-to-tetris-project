@@ -1,0 +1,5 @@
+class SpellingGame{
+drawRectangle (int 0, int 100, int 100, int 100);
+
+
+}

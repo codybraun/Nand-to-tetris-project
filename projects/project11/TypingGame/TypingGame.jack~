@@ -1,0 +1,58 @@
+class TypingGame {
+//each game needs two shapes, the player and the computer
+field Player circle;
+field Opponent square;
+//to track if the game is over
+field Boolean running;
+
+constructor TypingGame new() {
+	var Boolean running;
+	let square = Opponent.new();
+	let circle = Player.new();
+	return this;
+}
+
+method void start(){
+
+	var TypeStrings typing;
+
+	let typing = TypeStrings.new();
+
+	let running = true;
+	while (running){		
+		if (square.getx() < 400)
+		{
+			do square.move();
+			do Sys.wait(500);
+			do typing.handleOutput();
+			if (typing.handleInput()){
+				do circle.movePlayer();
+			}
+		}
+		if (square.getx() > 399)
+		{
+			do Output.printString("The computer beat you!");
+			let running = false;
+		}
+
+		if (circle.getX() > 399)
+		{
+			do Output.printString("YOU WON!");
+			let running = false;
+		}
+
+
+	}
+	return;
+}
+
+
+method void cleanup(){
+	do opponent.cleanup();
+	do opponent.cleanup();
+	do Memory.deAlloc(this);
+	return;
+}
+
+
+}

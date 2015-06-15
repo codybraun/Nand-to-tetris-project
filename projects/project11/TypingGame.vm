@@ -1,0 +1,30 @@
+function TypingGame.new 0 
+push constant 1 
+call Memory.alloc 1 
+push this 0
+call Opponent.new 1 
+pop this 1 
+call Player.new 1 
+pop this 0 
+push pointer 0 
+return 
+
+function TypingGame.start 0 
+push argument 0 
+pop pointer 0 
+call TypeStrings.new 1 
+pop local 0 
+push constant 0 
+not 
+pop this 2 
+return 
+
+function TypingGame.cleanup 0 
+push argument 0 
+pop pointer 0 
+call circle.cleanup 1 
+call square.cleanup 1 
+push pointer 0 
+call Memory.deAlloc 2 
+return 
+

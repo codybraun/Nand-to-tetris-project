@@ -1,0 +1,39 @@
+class Player{
+field int x;
+//these won't change
+field int radius;
+field int y;
+
+constructor Player new(){
+do Screen.setColor(true);
+let x = 25;
+let y =150;
+let radius = 20;
+do Screen.drawCircle (x, y, radius);
+return this;
+}
+
+
+method void movePlayer(){
+
+//clear old square
+do Screen.setColor(false);
+do Screen.drawCircle (x, y, radius);
+let x = x + 40;
+//draw new one
+do Screen.setColor(true);
+do Screen.drawCircle (x, y, radius);
+return;
+}
+
+method int getX(){
+return x;
+}
+
+method void cleanup(){
+do Memory.deAlloc(this);
+}
+
+
+}
+

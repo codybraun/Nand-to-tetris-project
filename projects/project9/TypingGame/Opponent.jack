@@ -1,0 +1,39 @@
+class Opponent{
+field int x;
+//height, won't change
+field int size;
+//y, won't change
+field int y;
+
+constructor Opponent new(){
+do Screen.setColor(true);
+let x = 0;
+let y = 50;
+let size = 50;
+do Screen.drawRectangle (x, y, x+size, y+size);
+return this;
+}
+
+method void move(){
+//clear old square
+do Screen.setColor(false);
+do Screen.drawRectangle (x, y, x+size, y+size);
+let x = x + 5;
+//draw new one
+do Screen.setColor(true);
+do Screen.drawRectangle (x, y, x+size, y+size);
+return;
+}
+
+method int getx()
+{
+return x;
+}
+
+method void cleanup(){
+do Memory.deAlloc(this);
+return;
+}
+
+}
+
